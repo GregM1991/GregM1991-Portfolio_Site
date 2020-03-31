@@ -26,7 +26,7 @@ body {
 }
 
 nav {
-	display: fixed;
+	position: sticky;
 	top: 0;
 	height: 100px;
 	width: 100%;
@@ -55,21 +55,30 @@ nav {
 }
 
 .menu {
+	display: flex;
 	width: 50%;
 	height: 100%;
 	font-size: 30px;
+	justify-content: flex-end;
 }
 
 .menu-items {
+	display: flex;
 	height: 100%;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	padding: 0 100px 0 0;
+	padding-right: 100px;
 }
 
 .menu-items a {
-	margin-left: 100px;
+	margin-left: 33%;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 }
 
 .splash {
@@ -95,4 +104,66 @@ nav {
 
 .splash span {
 	color: #e0fff1;
+}
+
+.splash .icon-container {
+	display: flex;
+	justify-content: center;
+}
+
+.icon-container i {
+	margin: 10px 10px;
+	color: #e0fff1;
+}
+
+#portfolio {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 100px;
+}
+
+#portfolio h1 {
+	margin-bottom: 100px;
+	font-size: 60px;
+	font-weight: 100;
+	color: #86d9b2;
+}
+
+.container {
+	display: flex;
+	width: 80%;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.folio-item {
+	width: 25%;
+	margin: 0 10px 30px;
+	height: auto;
+	min-width: 400px;
+}
+
+#portfolio img {
+	width: 100%;
+}
+
+@media (max-width: 766px) {
+	.logo {
+		font-size: 16px;
+		margin-left: 25px;
+		line-height: 23px;
+	}
+
+	.menu {
+		font-size: 16px;
+		padding: 0;
+		justify-content: flex-end;
+	}
+
+	.menu-items a {
+		justify-content: flex-end;
+		margin-left: 5px;
+		padding-right: 0;
+	}
 }
