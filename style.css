@@ -227,6 +227,33 @@ main {
 footer {
 	height: 200px;
 	background-color: #86d9b2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer div {
+	color: #cbffe7;
+	flex: 0 1 25%;
+}
+
+footer div h1 {
+	display: flex;
+	justify-content: center;
+	color: #cbffe7;
+	font-size: 60px;
+	line-height: 60px;
+}
+
+.footer-icons {
+	display: flex;
+	justify-content: center;
+}
+
+.footer-icons i {
+	margin: 10px 10px;
+	color: #cbffe7;
+	flex: 0 1 25%;
 }
 
 @media (max-width: 766px) {
