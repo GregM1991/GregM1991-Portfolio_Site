@@ -1,13 +1,13 @@
 /* Font imports */
-@import url('https://fonts.googleapis.com/css?family=Arvo|Raleway:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comic+Neue|Paprika&display=swap');
 
 html {
 	margin: 0;
-	font-family: 'Arvo', serif;
+	font-family: 'Comic Neue', cursive;
 }
 
 p {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Paprika', serif;
 }
 
 a {
