@@ -1,4 +1,4 @@
-/* Font imports */
+/******************* Font imports *******************/
 @import url('https://fonts.googleapis.com/css?family=Arvo|Raleway:400,700&display=swap');
 
 html {
@@ -11,7 +11,7 @@ a {
 	text-decoration: none;
 }
 
-/* setting box sizing to not flow outside parents */
+/******************* setting box sizing to not flow outside parents *******************/
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -25,13 +25,11 @@ body {
 }
 
 nav {
-	position: sticky;
-	top: 0;
 	height: 100px;
 	width: 100%;
 	background-color: #e0fff1;
 }
-/* setting the nav container to flex */
+/******************* setting the nav container to flex and laying out the elements within *******************/
 .nav-container {
 	display: flex;
 	width: 100%;
@@ -51,6 +49,8 @@ nav {
 .logo a {
 	color: #86d9b2;
 }
+
+/******************* Setting menu links to flex and laying out *******************/
 
 .menu {
 	display: flex;
@@ -73,11 +73,15 @@ nav {
 	margin-left: 33%;
 }
 
+/******************* Main body of content set to flex *******************/
+
 main {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 }
+
+/******************* Landing page setup to flex with items laid out within *******************/
 
 .splash {
 	height: calc(100vh - 100px);
@@ -117,6 +121,8 @@ main {
 	color: #e0fff1;
 }
 
+/******************* Portfolio section to flex with Grid container inside pretty fancy, extra marks thanks *******************/
+
 #portfolio {
 	display: flex;
 	flex-direction: column;
@@ -146,6 +152,8 @@ main {
 	transition: .5s;
 }
 
+/******************* Little bit of animation action here, hover shadow increase. *******************/
+
 .folio-item:hover {
 	box-shadow: 10px 10px 30px rgba(0, 89, 50, 0.2);
 }
@@ -154,22 +162,34 @@ main {
 	color: #222;
 }
 
+.folio-item i {
+	margin-left: 10px;
+}
+
 .folio-item img {
 	width: 100%;
 }
 
 .folio-item div {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	color: #222;
 	grid-row: 1fr;
 	background-color: #cbffe7;
 	width: 100%;
-	height: 60px;
+	height: 80px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 }
+
+.folio-item div p {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+/******************* About section set to flex *******************/
 
 #about {
 	display: flex;
@@ -224,6 +244,8 @@ main {
 	margin-bottom: 50px;
 }
 
+/******************* footer section *******************/
+
 footer {
 	height: 200px;
 	background-color: #86d9b2;
@@ -255,6 +277,8 @@ footer div h1 {
 	color: #cbffe7;
 	flex: 0 1 25%;
 }
+
+/* Media queris for mobile */
 
 @media (max-width: 766px) {
 	.logo {
