@@ -90,7 +90,7 @@ main {
 }
 
 .img-container {
-	background-image: url(/img/jackRussel.jpg);
+	background-image: url(img/jackRussel.jpg);
 	background-position: center;
 	background-size: cover;
 	width: 100%;
